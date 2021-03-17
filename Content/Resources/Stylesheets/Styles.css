@@ -1,0 +1,241 @@
+﻿/*<meta />*/
+
+body
+{
+	font-family: Arial;
+	color: red;
+}
+
+h1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+p
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #006600;
+}
+
+div.abc1	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.abc1::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.abc1::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.abc1 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.abc1 > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.abc1 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.abc1 > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+p.tablet
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	display: none;
+}
+
+p.mobile
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	display: none;
+}
+
+p.default
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+@media tablet
+{
+	div.abc1 > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.abc1 > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.abc1 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+body
+	{
+		color: blue;
+	}
+
+	p.default
+	{
+		display: none;
+	}
+
+	p.mobile
+	{
+		display: none;
+	}
+
+	p.tablet
+	{
+		display: block;
+	}
+}
+
+@media mobile
+{
+	div.abc1 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.abc1 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.abc1 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	body
+	{
+		color: green;
+	}
+
+	p.default
+	{
+		display: none;
+	}
+
+	p.tablet
+	{
+		display: none;
+	}
+
+	p.mobile
+	{
+		display: block;
+	}
+}
+
